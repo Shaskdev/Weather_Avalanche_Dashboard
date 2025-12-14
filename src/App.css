@@ -717,11 +717,56 @@ body.dark-mode {
     margin: 15px 0;
 }
 
+/* Resort Snow Reports */
+.resort-list {
+    display: grid;
+    gap: 15px;
+}
+
+.light-mode .resort-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.2s;
+}
+
+.dark-mode .resort-card {
+    background: #2a3f5f;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #3a4f6f;
+    transition: all 0.2s;
+}
+
+.resort-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.resort-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light-mode .resort-name {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #1e3c72;
+}
+
+.dark-mode .resort-name {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #6eb5ff;
+}
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
     }
-    
+
     .weather-grid {
         grid-template-columns: 1fr;
     }
@@ -733,8 +778,12 @@ body.dark-mode {
     .region-image-container {
         height: 250px;
     }
-    
+
     .map-container {
         height: 350px;
+    }
+
+    .resort-quick-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }

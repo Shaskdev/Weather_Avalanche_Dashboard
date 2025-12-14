@@ -6,5 +6,6 @@ export { AvalancheForecast } from './AvalancheForecast';
 export { WeatherConditions } from './WeatherConditions';
 export { WeatherTrendChart, WindChart } from './WeatherCharts';
 export { WeatherStations } from './WeatherStations';
+export { ResortSnowReports } from './ResortSnowReports';
 export { IncidentFeed } from './IncidentFeed';
 export { ResourceLinks } from './ResourceLinks';

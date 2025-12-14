@@ -7,6 +7,7 @@ import {
   AvalancheForecast,
   WeatherConditions,
   WeatherStations,
+  ResortSnowReports,
   IncidentFeed,
   ResourceLinks
 } from './components';
@@ -95,6 +96,12 @@ function App() {
           darkMode={darkMode}
         />
       </div>
+
+      <ResortSnowReports
+        selectedRegion={selectedRegion}
+        currentRegion={currentRegion}
+        darkMode={darkMode}
+      />
 
       <div className="grid">
         <WeatherStations
